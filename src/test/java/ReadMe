@@ -1,0 +1,31 @@
+First should run a application after enter into productDemoApplication
+then should type this "http://localhost:8080/productdemo" link in chrome for opening a database connection
+after see all records in product table it will showing in h2 database
+then hit a every api request following according to path name given 
+
+for retrive all proudct data from given api 
+this api will retrive all products = http://localhost:8080/products
+for finding product by using id
+first for get a product id use this api =http://localhost:8080/products/1  
+
+for create a new product record 
+http://localhost:8080/products
+
+for update a product record from exisiting data base
+http://localhost:8080/products/1
+
+for delete operation
+http://localhost:8080/products/1
+
+find by category
+http://localhost:8080/products/category/mobile
+
+get available products sort by price
+http://localhost:8080/products/available
+
+release date after existing products
+http://localhost:8080/products/released-after/2024-12-24
+
+pagination
+http://localhost:8080/products/list?pageNo=0&pageSize=10&sortBy=category
+

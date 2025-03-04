@@ -14,7 +14,7 @@ import org.springframework.security.web.access.channel.ChannelProcessingFilter;
 import org.springframework.web.cors.CorsUtils;
 
 
-@Configuration
+/*@Configuration
 @EnableWebSecurity
 public class WebSecurityConfiguration {
 

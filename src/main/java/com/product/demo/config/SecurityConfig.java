@@ -12,15 +12,29 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
-/*@Configuration
-@EnableWebSecurity
-@EnableMethodSecurity(prePostEnabled = true) // Replaces @EnableGlobalMethodSecurity
+@Configuration
+//@EnableWebSecurity
+//@EnableMethodSecurity(prePostEnabled = true) // Replaces @EnableGlobalMethodSecurity
 public class SecurityConfig {
 
-    private final UserDetailsService userDetailsService;
+	
+//	@Bean
+//    public SecurityFilterChain authorizationServerSecurityFilterChain(HttpSecurity http) throws Exception {
+//        OAuth2AuthorizationServerConfigurer authorizationServerConfigurer =
+//                new OAuth2AuthorizationServerConfigurer();
+//
+//        http.apply(authorizationServerConfigurer);
+//
+//        return http.build();
+//    }
+	
+	
+	
+   /* private final UserDetailsService userDetailsService;
 
     public SecurityConfig(UserDetailsService userDetailsService) {
         this.userDetailsService = userDetailsService;
@@ -59,7 +73,6 @@ public class SecurityConfig {
         authProvider.setUserDetailsService(userDetailsService);
         authProvider.setPasswordEncoder(encoder());
         return new ProviderManager(authProvider);
-    }
-}
+    }*/
 
-*/
+}

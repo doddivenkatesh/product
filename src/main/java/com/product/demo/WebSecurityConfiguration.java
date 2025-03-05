@@ -16,6 +16,8 @@ import org.springframework.web.cors.CorsUtils;
 
 /*@Configuration
 @EnableWebSecurity
+//@EnableGlobalMethodSecurity(prePostEnabled = true)
+@Order(Ordered.LOWEST_PRECEDENCE)
 public class WebSecurityConfiguration {
 
 	@Bean

@@ -14,22 +14,9 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean;
 
 @Configuration
-//@Import({ SecurityConfig.class })
 public class ApiConfig {
 
-   /* @Bean
-    @ConditionalOnProperty(name = "jmx.app.name", havingValue = "true", matchIfMissing = false)
-    public StringFactoryBean blJmxNamingBean() {
-        return new StringFactoryBean();
-    }
-
-    /**
-     * Configures an HTTP connector in addition to HTTPS.
-     * Spring Boot does not support both via properties, so this must be configured programmatically.
-     *
-     * @param httpServerPort the HTTP port
-     * @return TomcatServletWebServerFactory
-     */
+   
     @Bean
     public TomcatServletWebServerFactory tomcatEmbeddedServletContainerFactory(
             @Value("${http.server.port:8082}") int httpServerPort) {
